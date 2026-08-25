@@ -35,3 +35,29 @@
   .print-meta-row:first-child{justify-content:flex-start;gap:70px;text-align:right}
   .print-meta-row:last-child{justify-content:space-between;gap:10px}
 }
+
+/* تحسين الوضوح على الشاشات المختلفة */
+body{font-size:14px}
+label{font-size:13px}
+input,select,textarea{border-width:1.5px;font-size:14px}
+.card{border-width:1.5px}
+.btn.small{padding:7px 11px;font-size:12px;min-width:auto}
+.btn.danger{background:#fff0f0;color:var(--danger);border:1.5px solid #f2c5c5}
+.saved-toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:-6px 0 13px;padding-bottom:10px;border-bottom:1.5px solid var(--line)}
+.select-all,.invoice-check{display:flex;flex-direction:row;align-items:center;gap:6px;font-size:12px;color:var(--navy);cursor:pointer}
+.select-all input,.invoice-check input{width:17px;height:17px;accent-color:var(--navy)}
+.invoice-check{flex:0 0 auto}
+.saved-details{flex:1;min-width:0}
+.saved-item{border-width:1.5px}
+table{border:1.5px solid #b8c6d2}
+th,td{border-bottom-width:1.5px}
+@media print{.print-table th,.print-table td{border-width:1.5px}.print-customer{border-width:1.5px}.print-table{border-width:1.5px}}
+@media(max-width:480px){body{font-size:13px}input,select,textarea{font-size:14px}.saved-toolbar{align-items:stretch}.saved-toolbar .btn{flex:1}.saved-item{align-items:flex-start}.saved-actions{flex-wrap:wrap}}
+
+@media print{
+  .print-sheet{-webkit-print-color-adjust:exact;print-color-adjust:exact;background:#fff}
+  .print-customer{background:#bdbdbd!important;border-color:#111!important;color:#111}
+  .print-table th,.print-table td{background:#fff!important;color:#111}
+  .print-table tfoot th{background:#bdbdbd!important;color:#111}
+  .print-summary-line,.print-terms{background:#fff!important;color:#111}
+}
