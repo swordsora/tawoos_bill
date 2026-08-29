@@ -113,3 +113,33 @@ th,td{border-bottom-width:1.5px}
 .suggestion.product-recent,.suggestion.product-old{font-weight:800}
 .selected-product.product-recent,.selected-product.product-old{font-weight:800}
 .line-qty.product-recent,.line-qty.product-old{font-weight:800}
+
+
+
+
+
+@media print {
+  /* تكثيف كل نصوص الفاتورة */
+  .print-sheet,
+  .print-sheet * {
+    font-weight: 700 !important;
+  }
+
+  /* الحفاظ على وزن أثقل للعناوين والمجاميع */
+  .print-sheet h1,
+  .print-sheet h2,
+  .print-sheet strong,
+  .print-sheet b,
+  .print-sheet th,
+  .print-sheet .print-total,
+  .print-sheet .print-head strong,
+  .print-sheet tfoot th {
+    font-weight: 800 !important;
+  }
+
+  /* يمكن تخفيف الوزن قليلاً للنصوص الصغيرة أو الهوامش */
+  .print-sheet small,
+  .print-sheet .print-terms {
+    font-weight: 600 !important;
+  }
+}
