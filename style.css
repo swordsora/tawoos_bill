@@ -96,7 +96,7 @@ th,td{border-bottom-width:1.5px}
 @media (max-width:560px){.scanner-card{padding:20px}.scanner-video{min-height:180px}}
 
 /* Final modal layering and hidden-state hardening */
-:root{--z-splash:100;--z-modal:500;--z-lock:700;--z-auth:900;--z-toast:1200}
+:root{--z-splash:100;--z-modal:5000;--z-lock:700;--z-auth:900;--z-toast:1200}
 .startup-splash{z-index:var(--z-splash)}
 .modal{z-index:var(--z-modal);isolation:isolate}
 .program-lock{z-index:var(--z-lock)}
