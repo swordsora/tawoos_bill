@@ -142,4 +142,12 @@ th,td{border-bottom-width:1.5px}
   .print-sheet .print-terms {
     font-weight: 600 !important;
   }
+
+  /* جعل عمود الكمية في صف الجملة في المنتصف */
+  .print-table tfoot th:not([colspan]) {
+  text-align: center !important;
+}
+
+.print-table tfoot .qty-cell {
+  text-align: center !important;
 }
