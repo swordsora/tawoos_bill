@@ -201,3 +201,5 @@ th,td{border-bottom-width:1.5px}
 .product-admin-form label:nth-of-type(3),.product-admin-form label:nth-of-type(4){grid-column:1/-1}
 
 .user-manager-card,.product-manager-card,.devices-card{max-height:min(82vh,760px);overflow-y:auto}.user-manager-card::-webkit-scrollbar,.product-manager-card::-webkit-scrollbar,.devices-card::-webkit-scrollbar{width:8px}.user-manager-card::-webkit-scrollbar-thumb,.product-manager-card::-webkit-scrollbar-thumb,.devices-card::-webkit-scrollbar-thumb{background:#b7c7d6;border-radius:999px}
+
+.product-info-btn{border:1px solid currentColor;border-radius:50%;width:28px;height:28px;background:transparent;font-weight:800;cursor:pointer}.product-details-card{max-height:min(82vh,620px);overflow-y:auto}.product-detail-row{display:flex;justify-content:space-between;gap:18px;padding:8px 0;border-bottom:1px solid rgba(0,0,0,.08)}
