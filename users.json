@@ -2,15 +2,11 @@
   "version": 1,
   "users": [
     {
-      "username": "Saif_Eldin_Ryhan",
-      "password": "258*357*159*654",
-      "role": "developer"
-    },
-    {
-      "username": "سيف الدين ريحان",
+      "username": "مستخدم تجريبي",
       "password": "4321",
-      "role": "user"
+      "role": "user",
+      "active": true
     }
   ],
-  "updatedAt": "2026-08-26T00:00:00.000Z"
+  "updatedAt": "2026-09-03T00:00:00.000Z"
 }
